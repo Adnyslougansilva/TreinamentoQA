@@ -1,0 +1,31 @@
+	Documentação Automação Robot https://www.veinerd.com/
+
+User Story 1: Como usuario quero acessar o site para encontrar o que desejo comprar.
+    Criterio de Aceite - O usuario deve conseguir acessar o site https://www.veinerd.com/
+        Cenario de Teste - Dado que sou usuario e estou no browser
+                           Quando acesso o site https://www.veinerd.com/
+                           Entao entra na pagina para eu pesquisar o produto desejado
+
+U.S 2: Como usuario quero pesquisar um produto para encontrar o que desejo comprar.
+    C.A - O usuario deve poder clicar no campo de pesquisa e buscar o produto 
+        C.T - Dado que sou usuario e estou no site
+              Quando clico para inserir o texto 
+              Entao clico em pesquisar deve exibir o produto
+
+U.S 3: Como usuario quero selecionar um produto para adicionar no carrinho
+    C.A - O usuario deve poder adicionar o produto no carrinho
+        C.T - Dado que sou usuario achei o produto desejado
+              Quando clico para adicionar ao carrinho com todas as opcoes marcadas
+              Entao o produto deve ser adicionado ao carrinho
+
+U.S 4: Como usuario quero ver produto no carrinho para seguir minha compra
+    C.A - O usuario deve poder ver o produto no carrinho
+        C.T - Dado que sou usuario e selecionei o produto desejado
+              Quando clico no icone de carrinho de compra
+              Entao devo ser redirecionado para o carrinho de compra
+    
+U.S 5: Como usuario quero excluir um produto para poder escolher outro
+    C.A - O usuario deve poder excluir o produto no carrinho
+        C.T - Dado que sou usuario quero excluir o produto adicionado
+              Quando clico para excluir o produto do carrinho
+              Entao o produto deve ser excluido do carrinho 

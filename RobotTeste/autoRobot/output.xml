@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-13T12:51:38.348335" rpa="false" schemaversion="5">
+<suite id="s1" name="autoVeiNerd" source="C:\Users\Usuario\Desktop\Luv2Mob\QaCursoRobot\autoRobot\autoVeiNerd.robot">
+<test id="s1-t1" name="Scenario 1:" line="49">
+<kw name="Acessar web site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:39.069754" level="INFO">Opening browser 'chrome' to base url 'https://www.veinerd.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-13T12:51:39.069422" elapsed="4.831723"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-13T12:51:43.901784" elapsed="0.085124"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:51:39.068290" elapsed="4.918897"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:51:39.067170" elapsed="4.920792"/>
+</test>
+<test id="s1-t2" name="Scenario 2:" line="52">
+<kw name="Pesquisar produto">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:43.995259" level="INFO">Clicking element '//*[@id="input-search"]'.</msg>
+<arg>locator=//*[@id="input-search"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:43.994166" elapsed="0.410768"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:44.407583" level="INFO">Typing text ' Coffee' into text field '//*[@id="input-search"]'.</msg>
+<arg>locator=//*[@id="input-search"]</arg>
+<arg>text= Coffee</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:44.405720" elapsed="0.242933"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:44.649875" level="INFO">Clicking element '//*[@id="form-search"]/div/div/img'.</msg>
+<arg>${btn_pesquisar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:44.649176" elapsed="1.102628"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T12:51:47.752935" level="INFO">Slept 2 seconds.</msg>
+<arg>time_=2S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T12:51:45.752198" elapsed="2.001035"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:51:43.992813" elapsed="3.761892"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:51:43.990841" elapsed="3.764734"/>
+</test>
+<test id="s1-t3" name="Scenario 3:" line="55">
+<kw name="Adicionar Produto no carrinho">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:47.761471" level="INFO">Clicking element '//*[@id="inicio"]/body/div[4]/div[2]'.</msg>
+<arg>locator=//*[@id="inicio"]/body/div[4]/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:47.760972" elapsed="0.257176"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:48.019709" level="INFO">Clicking element '//*[@id="244"]/div[2]/div[1]'.</msg>
+<arg>locator=${click_prd}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:48.018859" elapsed="1.216510"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:49.236973" level="INFO">Clicking element '//*[@id="inicio"]/body/div[3]/div[2]/div[2]/div[3]/div[2]/label[1]'.</msg>
+<arg>locator=${modelo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:49.235932" elapsed="0.212662"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:49.449798" level="INFO">Clicking element '//*[@id="inicio"]/body/div[3]/div[2]/div[2]/div[3]/div[4]/label[1]'.</msg>
+<arg>locator=${tipo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:49.448994" elapsed="0.160858"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:49.610789" level="INFO">Clicking element '//*[@id="inicio"]/body/div[3]/div[2]/div[2]/div[3]/div[6]/label[5]'.</msg>
+<arg>locator=${tamanho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:49.610245" elapsed="0.150895"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${btn_adicionar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-13T12:51:49.761461" elapsed="0.055477"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:49.818953" level="INFO">Clicking element '//*[@id="add-cart"]'.</msg>
+<arg>locator=${btn_adicionar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:49.818170" elapsed="0.131721"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T12:51:54.951350" level="INFO">Slept 5 seconds.</msg>
+<arg>time_=5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T12:51:49.950323" elapsed="5.001299"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:51:47.760214" elapsed="7.191699"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:51:47.759188" elapsed="7.193441"/>
+</test>
+<test id="s1-t4" name="Scenario 4:" line="58">
+<kw name="Ver produto no carrinho">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${carrinho}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-13T12:51:54.960064" elapsed="0.228253"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:51:55.189715" level="INFO">Clicking element '//*[@id="inicio"]/body/header/div/div[2]/a[2]/img'.</msg>
+<arg>locator=${carrinho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:51:55.188867" elapsed="1.628050"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T12:52:01.818460" level="INFO">Slept 5 seconds.</msg>
+<arg>time_=5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T12:51:56.817578" elapsed="5.001059"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:51:54.957399" elapsed="6.861419"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:51:54.954459" elapsed="6.864850"/>
+</test>
+<test id="s1-t5" name="Scenario 5:" line="61">
+<kw name="Exclui produto">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T12:52:01.823719" level="INFO">Clicking element '//*[@id="inicio"]/body/div[3]/div/div[2]/div[1]/div/div[3]/img'.</msg>
+<arg>locator=${exclui_prd}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T12:52:01.822846" elapsed="0.199567"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T12:52:07.025027" level="INFO">Slept 5 seconds.</msg>
+<arg>time_=5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T12:52:02.023152" elapsed="5.002069"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:52:01.821986" elapsed="5.203436"/>
+</kw>
+<status status="PASS" start="2025-03-13T12:52:01.820744" elapsed="5.205112"/>
+</test>
+<status status="PASS" start="2025-03-13T12:51:38.352016" elapsed="28.675236"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="autoVeiNerd" id="s1" pass="5" fail="0" skip="0">autoVeiNerd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
