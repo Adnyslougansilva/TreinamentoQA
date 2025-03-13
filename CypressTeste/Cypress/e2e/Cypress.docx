@@ -1,0 +1,37 @@
+Documentação Automação Cypress https://www.lojareidoterere.com.br/
+
+User Story 1: Como usuario quero acessar o site para pesquisar produto.
+    Criterio de Aceite - O usuario deve conseguir acessar o site e pesquisar.
+        Cenario de Teste - Dado que sou usuario e estou no site
+                           Quando clico em produtos 
+                           Entao entra na pagina que exibe todas as categorias de produtos
+
+U.S 2: Como usuario quero selecionar a erva mate ver os detalhes.
+    C.A - O usuario deve poder selecionar a erva mate desejada.
+        C.T - Dado que sou usuario e estou na pagina de erva mate
+              Quando clico em erva mate 
+              Entao deve abrir a pagina com os detalhes do produto 
+
+U.S 3: Como usuario quero calcular o frete para saber o alteraçao no valor do produto
+    C.A - O usuario deve poder calcular o frete
+        C.T - Dado que sou usuario e informo o cep no campo Seu-CEP
+              Quando clico calcular 
+              Entao deve exibir as transportadoras disponiveis com o valor do frete
+
+U.S 4: Como usuario quero alterar o CEP para calcular no final da compra
+    C.A - O usuario deve poder alterar o CEP
+        C.T - Dado que sou usuario e informo o cep no campo Seu-CEP
+              Quando clicar no botao para Alterar CEP 
+              Entao deve apagar as transportadoras disponiveis com o valor do frete e habilitar o botao de compra
+
+U.S 5: Como usuario quero comprar a erva mate para seguir a compra
+    C.A - O usuario deve poder comprar a erva mate e ir para o carrinho
+        C.T - Dado que sou usuario e escolhi a erva mate 
+              Quando clico no botão de comprar
+              Entao devo ser redirecionado para o carrinho de compra
+    
+U.S 6: Como usuario quero finalizar a compra para finalizar meu cadastro
+    C.A - O usuario deve poder finalizar a compra e redirecionado para outro cadastro
+        C.T - Dado que sou usuario quero finalizar a compra
+              Quando clico para finalizar a compra
+              Entao sou redirecionado para a tela de dados de contato. 
