@@ -1,0 +1,14 @@
+Documentação Automação Sikuli Media Player
+
+User Story 1: Como usuario quero renomear uma playlist para deixar atualizada.
+    Criterio de Aceite - O usuario deve conseguir renomear a playlist.
+        Cenario de Teste - Dado que sou usuario e estou no media player
+                           Quando abro uma playlist 
+                           Entao devo conseguir renomear a playlist
+
+U.S 2: Como usuario quero tocar todas as musicas para adicionar as melhores em uma playlist caso desejar.
+    C.A - O usuario deve selecionar o artista e tocar todas as musicas de uma vez.
+        C.T - Dado que sou usuario pesquiso o artista 
+              Quando clico em uma musica depois no album 
+              Entao ao exibir todo o algum devo conseguir executar todas as musicas em um clique. 
+       
